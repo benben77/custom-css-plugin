@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/main.css"></link>
+  </head>
+  <body>
+    <div x-data="getData()" x-init="init()" class="app">
+      <h1 class="header" x-text="hostname"></h1>
+      <div>
+        <textarea x-model="style"></textarea>
+      </div>
+      <div>
+        <button @click="saveStyle()">保存样式</button>
+        <button @click="applyStyle()">应用样式</button>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="./js/alpine.js" defer></script>
+  </body>
+</html>
